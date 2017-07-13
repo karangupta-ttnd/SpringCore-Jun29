@@ -9,9 +9,9 @@ import org.springframework.beans.factory.annotation.Required;
  */
 public class Restaurent {
 
+    @Autowired
     private HotDrink hotDrink1;
 
-    @Autowired
     public void setHotDrink1(HotDrink hotDrink) {
         this.hotDrink1 = hotDrink;
     }

@@ -11,4 +11,7 @@ public class Restaurent {
         this.hotDrink = hotDrink;
     }
 
+    public HotDrink getHotDrink(){
+        return hotDrink;
+    }
 }

@@ -1,4 +1,4 @@
-package com.ttnd;
+package com.ttnd.Q1;
 
 /**
  * Created by karan on 12/7/17.

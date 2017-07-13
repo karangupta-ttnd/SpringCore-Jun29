@@ -12,7 +12,7 @@
 
 
 
-    <bean id="expressTea" class="com.ttnd.Q3.ExpressTea"></bean>
+    <!--<bean id="expressTea" class="com.ttnd.Q3.ExpressTea"></bean>-->
     <!--<bean id="teaRestaurent" class="com.ttnd.Q3.Restaurent">-->
         <!--<property name="hotDrink">-->
             <!--<bean id="expressTeaRestaurent" class="com.ttnd.Q3.ExpressTea"></bean>-->
@@ -45,9 +45,9 @@
         </property>
     </bean>
 
-    <bean id="restaurent" class="com.ttnd.Q3.Restaurent" autowire="byType">   </bean>
+    <bean id="restaurent" class="com.ttnd.Q3.Restaurent" autowire="constructor">   </bean>
     <bean id="hotDrink1" class="com.ttnd.Q3.Tea"></bean>
-    <bean id="hotDrink2" class="com.ttnd.Q3.Tea"></bean>
+
 
 
 

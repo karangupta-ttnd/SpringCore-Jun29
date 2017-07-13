@@ -6,6 +6,6 @@ package com.ttnd.Q3;
 public class ExpressTea implements HotDrink {
     @Override
     public void prepareHotDrink() {
-
+        System.out.println("ExpressTea method");
     }
 }

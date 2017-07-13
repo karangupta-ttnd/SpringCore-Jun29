@@ -13,11 +13,11 @@
 
 
     <!--<bean id="expressTea" class="com.ttnd.Q3.ExpressTea"></bean>-->
-    <!--<bean id="teaRestaurent" class="com.ttnd.Q3.Restaurent">-->
-        <!--<property name="hotDrink">-->
-            <!--<bean id="expressTeaRestaurent" class="com.ttnd.Q3.ExpressTea"></bean>-->
-        <!--</property>-->
-    <!--</bean>-->
+    <bean id="teaRestaurent" class="com.ttnd.Q3.Restaurent" scope="prototype">
+        <constructor-arg name="hotDrink">
+            <bean id="expressTeaRestaurent" class="com.ttnd.Q3.ExpressTea"></bean>
+        </constructor-arg>
+    </bean>
     
     
     <bean id="complexBean" class="com.ttnd.Q5.Complex">
@@ -45,8 +45,8 @@
         </property>
     </bean>
 
-    <bean id="restaurent" class="com.ttnd.Q3.Restaurent" autowire="constructor">   </bean>
-    <bean id="hotDrink1" class="com.ttnd.Q3.Tea"></bean>
+    <!--<bean id="restaurent" class="com.ttnd.Q3.Restaurent" autowire="constructor">   </bean>-->
+    <!--<bean id="hotDrink1" class="com.ttnd.Q3.Tea"></bean>-->
 
 
 

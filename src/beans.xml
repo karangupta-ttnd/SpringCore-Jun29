@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="db" class="com.ttnd.Database">
+    <bean id="db" class="com.ttnd.Q1.Database">
         <property name="name" value="MySQL"></property>
         <property name="port" value="10910" ></property>
     </bean>
@@ -20,6 +20,33 @@
             </bean>
         </property>
     </bean>
+    
+    
+    <bean id="complexBean" class="com.ttnd.Q5.Complex">
+        <property name="list">
+            <list>
+                <value>Item1</value>
+                <value>Item2</value>
+                <value>Item2</value>
+            </list>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>value1</value>
+                <value>value1</value>
+                <value>value2</value>
+                <value>value2</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="CPU" value="Central Processing Unit"/>
+                <entry key="TTND" value="To The New Digital"/>
+            </map>
+        </property>
+    </bean>
+    
 
 
 </beans>

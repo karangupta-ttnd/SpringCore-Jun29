@@ -5,9 +5,9 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="db" class="Database">
-        <property name="name" value="MySpringDatabase"></property>
-        <property name="port" value="10990"></property>
+    <bean id="db" class="com.ttnd.Database">
+        <property name="name" value="MySQL"></property>
+        <property name="port" value="10910" ></property>
     </bean>
 
 

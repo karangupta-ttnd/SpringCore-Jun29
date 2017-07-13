@@ -15,8 +15,8 @@ public class Main {
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        Complex complex =(Complex)context.getBean("complexBean");
-        System.out.println(complex.toString());
+        Restaurent restaurent =(Restaurent)context.getBean("restaurent");
+        restaurent.getHotDrink().prepareHotDrink();
     }
 
 }

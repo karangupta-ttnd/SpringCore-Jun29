@@ -14,7 +14,7 @@
     <bean id="tea" class="com.ttnd.Q3.Tea"></bean>
     <bean id="expressTea" class="com.ttnd.Q3.ExpressTea"></bean>
     <bean id="teaRestaurent" class="com.ttnd.Q3.Restaurent">
-        <constructor-arg ref="tea"></constructor-arg>
+        <property name="hotDrink" ref="tea"></property>
     </bean>
 
 

@@ -6,12 +6,18 @@ package com.ttnd.Q3;
 public class Restaurent {
 
     HotDrink hotDrink;
+    @Override
+    public String toString() {
+        return "Restaurent{" +
+                "hotDrink=" + hotDrink +
+                '}';
+    }
+
+    public HotDrink getHotDrink() {
+        return hotDrink;
+    }
 
     public void setHotDrink(HotDrink hotDrink) {
         this.hotDrink = hotDrink;
-    }
-
-    public HotDrink getHotDrink(){
-        return hotDrink;
     }
 }

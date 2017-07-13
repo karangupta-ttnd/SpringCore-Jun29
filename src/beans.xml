@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
     <bean id="db" class="com.ttnd.Q1.Database">
         <property name="name" value="MySQL"></property>
-        <property name="port" value="10910" ></property>
+        <property name="port" value="10910"></property>
     </bean>
 
 
+    <bean id="expressTea" class="com.ttnd.Q3.ExpressTea"></bean>
+    <!--<bean id="teaRestaurent" class="com.ttnd.Q3.Restaurent" scope="prototype">-->
+    <!--<constructor-arg name="hotDrink">-->
+    <!--<bean id="expressTeaRestaurent" class="com.ttnd.Q3.ExpressTea"></bean>-->
+    <!--</constructor-arg>-->
+    <!--</bean>-->
 
-    <!--<bean id="expressTea" class="com.ttnd.Q3.ExpressTea"></bean>-->
-    <bean id="teaRestaurent" class="com.ttnd.Q3.Restaurent" scope="prototype">
-        <constructor-arg name="hotDrink">
-            <bean id="expressTeaRestaurent" class="com.ttnd.Q3.ExpressTea"></bean>
-        </constructor-arg>
-    </bean>
-    
-    
+
     <bean id="complexBean" class="com.ttnd.Q5.Complex">
         <property name="list">
             <list>
@@ -45,11 +45,11 @@
         </property>
     </bean>
 
-    <!--<bean id="restaurent" class="com.ttnd.Q3.Restaurent" autowire="constructor">   </bean>-->
-    <!--<bean id="hotDrink1" class="com.ttnd.Q3.Tea"></bean>-->
+    <bean id="restaurent" class="com.ttnd.Q3.Restaurent">
+        <property name="hotDrink1" ref="expressTea"></property>
+    </bean>
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
 
-
-
-
+    <context:component-scan base-package="com.ttnd" />
 
 </beans>

@@ -10,4 +10,5 @@ public class Restaurent {
     public void setHotDrink(HotDrink hotDrink) {
         this.hotDrink = hotDrink;
     }
+
 }

@@ -14,7 +14,11 @@
     <bean id="tea" class="com.ttnd.Q3.Tea"></bean>
     <bean id="expressTea" class="com.ttnd.Q3.ExpressTea"></bean>
     <bean id="teaRestaurent" class="com.ttnd.Q3.Restaurent">
-        <property name="hotDrink" ref="tea"></property>
+        <property name="hotDrink">
+            <bean id="expressTeaRestaurent" class="com.ttnd.Q3.ExpressTea">
+
+            </bean>
+        </property>
     </bean>
 
 

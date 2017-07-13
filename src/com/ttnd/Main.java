@@ -2,6 +2,7 @@ package com.ttnd;
 
 import com.ttnd.Q3.ExpressTea;
 import com.ttnd.Q3.HotDrink;
+import com.ttnd.Q3.Restaurent;
 import com.ttnd.Q3.Tea;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -16,11 +17,8 @@ public class Main {
 //        Database db =(Database) context.getBean("db");
 //        System.out.println(db.toString());
 
-        HotDrink expressTea =(ExpressTea) context.getBean("expressTea");
-        HotDrink tea =(Tea) context.getBean("tea");
-        expressTea.prepareHotDrink();
-        tea.prepareHotDrink();
-
+       Restaurent obj=(Restaurent) context.getBean("teaRestaurent");
+       obj.getHotDrink().prepareHotDrink();
 
     }
 

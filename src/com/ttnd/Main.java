@@ -17,7 +17,6 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         Restaurent restaurent =(Restaurent)context.getBean("restaurent");
         restaurent.getHotDrink1().prepareHotDrink();
-        restaurent.getHotDrink2().prepareHotDrink();
     }
 
 }

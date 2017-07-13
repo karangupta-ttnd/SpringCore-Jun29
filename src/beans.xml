@@ -45,8 +45,9 @@
         </property>
     </bean>
 
-    <bean id="restaurent" class="com.ttnd.Q3.Restaurent" autowire="byName">   </bean>
+    <bean id="restaurent" class="com.ttnd.Q3.Restaurent" autowire="byType">   </bean>
     <bean id="hotDrink1" class="com.ttnd.Q3.Tea"></bean>
+    <bean id="hotDrink2" class="com.ttnd.Q3.Tea"></bean>
 
 
 

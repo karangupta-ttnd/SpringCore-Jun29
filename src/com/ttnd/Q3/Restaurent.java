@@ -5,19 +5,13 @@ package com.ttnd.Q3;
  */
 public class Restaurent {
 
-    HotDrink hotDrink;
-    @Override
-    public String toString() {
-        return "Restaurent{" +
-                "hotDrink=" + hotDrink +
-                '}';
+    HotDrink hotDrink1;
+
+    public HotDrink getHotDrink1() {
+        return hotDrink1;
     }
 
-    public HotDrink getHotDrink() {
-        return hotDrink;
-    }
-
-    public void setHotDrink(HotDrink hotDrink) {
-        this.hotDrink = hotDrink;
+    public void setHotDrink1(HotDrink hotDrink1) {
+        this.hotDrink1 = hotDrink1;
     }
 }

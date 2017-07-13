@@ -15,8 +15,8 @@ public class Main {
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        Restaurent restaurent =(Restaurent)context.getBean("restaurent");
-        restaurent.getHotDrink1().prepareHotDrink();
+        Restaurent restaurent =(Restaurent)context.getBean("teaRestaurent");
+        System.out.println(context.isPrototype("teaRestaurent"));
     }
 
 }
